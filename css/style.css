@@ -14,14 +14,15 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #dde6e9; 
+  --link-color: #72af77;
+  --link-hover-color: #3f3333;
+  --color-4: #d4c377;
+  --color-5:#b69263;
+  --color-6: #3f3333; 
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: 'Brygada 1918', serif;
+  --secondary-font: "roboto", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -34,8 +35,9 @@ a {
   transition: all 3s;
 }
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  background-color: #3f3333; 
+  /* transform: scale(2) rotate(5deg); */
+  transform: translateY(-20%);
 }
 
 button:active {
@@ -44,7 +46,7 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1.2rem;
 }
 html {
   font-size: 100%;
@@ -65,8 +67,8 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
-  color: white;
+  background: hsl(34, 36%, 55%); 
+  color: rgb(95, 76, 15); 
   width: 100%;
 }
 
@@ -76,12 +78,12 @@ footer {
   letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: rgb(231, 228, 216); 
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgb(209, 202, 175); 
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -104,10 +106,10 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
+  font-family: roboto;
 }
 
 ul {
@@ -126,23 +128,28 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: #dde6e9;
+  border-radius: 50%;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #72af77; 
+  border-radius: 50%;
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #d4c377; 
+  border-radius: 50%;
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: #b69263; 
+  border-radius: 50%;
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: #3f3333; 
+  border-radius: 50%;
 }
 
 .textures li {
@@ -152,19 +159,23 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background-image: url(/img/pw_maze_white.png) top left repeat;
+  border-radius: 50%;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(/textures/7480443.jpg) top left repeat;
+  border-radius: 50%;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(/textures/Lined-Paper-White-Tileable-pattern.jpg) top left repeat;
+  border-radius: 50%;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(/textures/Grey-Jean-White-Seamless-Patterns-For-Website-Backgrounds.jpg) top left repeat;
+  border-radius: 50%;
 }
 
 .images ul {
@@ -180,7 +191,6 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
@@ -188,8 +198,12 @@ button {
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
+  text-shadow: 0px -1px 0px #383636;
+  /* transform: rotateX(-20%) */
+  border-radius: 25px; 
+  border: none; 
+  box-shadow:rgb(0, 0, 0); 
+  transition: all 0.5s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
@@ -206,25 +220,26 @@ button:focus-within {
 }
 
 .typography-main {
-  color: var(--main-text-color);
+  color:#5f4c0f; 
 }
 
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  color: #72af77
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  color:#5f4c0f
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
 }
+
 
 strong {
   font-weight: bold;
@@ -239,7 +254,8 @@ a {
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  color: #b69263; 
 }
 
 p[class*="font-details-"] {
